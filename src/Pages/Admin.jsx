@@ -1,7 +1,14 @@
 import React from "react";
+import BookDetailForm from "../components/Admin/BookDetailForm";
+import BookList from "../components/Admin/BookList";
 
 const Admin = () => {
-  return <div>admin</div>;
+  return (
+    <>
+      <BookDetailForm />
+      <BookList />
+    </>
+  );
 };
 
 export default Admin;

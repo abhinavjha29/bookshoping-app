@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
           <ul className="nav col-12 col-lg-auto  mb-2 justify-content-center mb-md-0">
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-white active">
+              <NavLink to="/" className="nav-link px-2 text-white active">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -47,9 +48,9 @@ const Header = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-white hover">
-                Pricing
-              </a>
+              <NavLink to="/books" className="nav-link px-2 text-white hover">
+                Books
+              </NavLink>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link px-2 text-white hover">
@@ -79,9 +80,12 @@ const Header = () => {
             <button type="button" className="btn btn-outline-light me-2">
               Login/SignUp
             </button>
-            <button type="button" className="btn btn-warning">
-              Admin
-            </button>
+            <NavLink to="/admin">
+              <button type="button" className="btn btn-warning">
+                Admin
+              </button>
+            </NavLink>
+
             <button
               type="button"
               className="btn btn-primary position-relative"

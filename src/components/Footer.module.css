@@ -21,3 +21,37 @@ img {
   align-items: center;
   flex-direction: row;
 }
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* Additional styles for responsiveness */
+.slide img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 50%; /* Two slides per row on smaller screens */
+  }
+}

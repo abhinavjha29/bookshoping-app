@@ -9,6 +9,8 @@ import SignIn from "./Pages/SignIn";
 import SignUp from "./Pages/SignUp";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import BooksPage from "./Pages/BooksPage";
+import SingleItemView from "./Pages/SingleItemView";
 
 function App() {
   return (
@@ -20,8 +22,10 @@ function App() {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/sihnUp" element={<SignUp />} />
+        <Route path="/books" element={<BooksPage />} />
+        <Route path="/single" element={<SingleItemView />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
